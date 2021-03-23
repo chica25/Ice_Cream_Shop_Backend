@@ -45,6 +45,6 @@ class IceCream < ApplicationController
     end
 
     def iceCream_params
-        params.require.(:iceCream).permit(:name, :description, :ingredients, :image)
+        params.require.(:iceCream).permit(:name, :description, :ingredients, :image, :ingredients, :allergens)
     end
 end
