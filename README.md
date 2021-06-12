@@ -7,3 +7,10 @@
 
 Design
 - use vanilla css
+
+Steps 
+- create wireframe
+- choose color palette and typography
+- design pages in Figma
+
+
