@@ -32,11 +32,11 @@ class IceCream < ApplicationController
         render json: iceCream
     end
 
-    def destroy
-        set_iceCream
-        iceCream.delete
-        render json: iceCream
-    end
+    # def destroy
+    #     set_iceCream
+    #     iceCream.delete
+    #     render json: iceCream
+    # end
 
     private
 
@@ -45,6 +45,6 @@ class IceCream < ApplicationController
     end
 
     def iceCream_params
-        params.require.(:iceCream).permit(:name, :description, :ingredients, :image, :ingredients, :allergens)
+        params.require.(:iceCream).permit(:name,  :image, :flavor)
     end
 end
