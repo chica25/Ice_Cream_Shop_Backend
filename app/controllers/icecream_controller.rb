@@ -1,35 +1,35 @@
-class IceCream < ApplicationController
+class IceCreamController < ApplicationController
 
 
     def index
-        iceCreams = IceCream.all
+        ice_creams = IceCream.all
         render json: ice_creams
     end 
 
     def create 
-        iceCream = IceCream.new(iceCream_params)
-        if iceCream.save
-            render: json: phrase
+        ice_cream = IceCream.new(ice_cream_params)
+        if ice_cream.save
+            render json: ice_cream
         end
     end
 
     def show
-        iceCream = IceCream.find_by_id(params[:id])
+        ice_cream = IceCream.find_by_id(params[:id])
     end
 
     def edit
-        set_iceCream
-        if iceCream.update
-            render json: iceCream
+        set_ice_cream
+        if ice_cream.update
+            render json: ice_cream
         else
-            render json:
+            render json: ice_cream
         end
     end
 
     def update
-        set_iceCream
-        iceCream.update
-        render json: iceCream
+        set_ice_cream
+        ice_cream.update
+        render json: ice_cream
     end
 
     # def destroy
@@ -40,11 +40,11 @@ class IceCream < ApplicationController
 
     private
 
-    def set_iceCream
-        iceCream = IceCream.find_by_id(params[:id])
+    def set_ice_cream
+        ice_cream = IceCream.find_by_id(params[:id])
     end
 
-    def iceCream_params
-        params.require.(:iceCream).permit(:name,  :image, :flavor)
+    def ice_cream_params
+        params.require.(:iceCream).permit(:name, :flavor,:img_url)
     end
 end

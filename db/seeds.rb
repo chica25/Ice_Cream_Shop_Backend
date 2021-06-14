@@ -19,18 +19,18 @@
     )
 
     double_trouble = IceCream.create(
-       name: "Double Trouble", flavor: "Double Chocolate Fudge", image_url: "https://icecreamimgs061421.s3.amazonaws.com/double_trouble.png"
+       name: "Double Trouble", flavor: "Double Chocolate Fudge", img_url: "https://icecreamimgs061421.s3.amazonaws.com/double_trouble.png"
     )
 
     dance_with_me = IceCream.create(
         name: "Dance with Me", flavor: "Vanilla Cream Cheese, Frozen Strawberry and raspberry", img_url: "https://icecreamimgs061421.s3.amazonaws.com/dance_with_me.png"
     )
-pink_chocolate = IceCream.create(
+    pink_chocolate = IceCream.create(
         name: "Pink Chocolate", flavor: "Vanilla Strawberry and Chocolate fudge ", img_url: "https://icecreamimgs061421.s3.amazonaws.com/pink_chocolate.png"
     )
 
-    cafe_con_leche = Icecreame.create(
-       name: "Cafe Con Leche" flavor: "vanilla, fresh coffee beans, and white Chocolate", img_url: "https://icecreamimgs061421.s3.amazonaws.com/cafe_con_leche.png"
+    cafe_con_leche = IceCream.create(
+       name: "Cafe Con Leche", flavor: "vanilla, fresh coffee beans, and white Chocolate", img_url: "https://icecreamimgs061421.s3.amazonaws.com/cafe_con_leche.png"
     )
 
     purple_rain = IceCream.create(
