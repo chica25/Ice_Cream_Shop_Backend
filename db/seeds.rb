@@ -21,8 +21,8 @@ constellation = Constellation.create(
        name: "Keep it Simple", flavor: "Vanilla Ice Cream", img_url: ""
     )
 
-    pink_chocolate = IceCream.create(
-        name: "Pink Chocolate", flavor: "Frozen Strawberry with Chocolate Ice Cream", img_url: ""
+    pretty_in_pink = IceCream.create(
+        name: "Pink Chocolate", flavor: "Plain Strawberry Ice Cream", img_url: ""
     )
 
     double_trouble = IceCream.create(
@@ -42,5 +42,5 @@ constellation = Constellation.create(
     )
 
     purple_rain = IceCream.create(
-        name: "Purple Rain", flavor: "Vanilla, Raspberry, Blackberry and Chocolate Fudge", img_url: ""
+        name: "Purple Rain", flavor: "Raspberry, Blackberry and Chocolate", img_url: ""
     )
